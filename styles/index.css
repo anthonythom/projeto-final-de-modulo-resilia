@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+nav { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: rgb(255, 238, 0);
+    text-decoration: none;
+    font-family: 'Bangers', cursive;
+}
+nav a:hover {
+color: black;
+text-shadow: 0 0 8px whitesmoke;
+
+}
+.imagemfundo {
+    width: 100vw;
+    background-image: url("../imgs/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+}
+.footer {
+    padding-left: 50%;
+   
+    color: rgb(253, 249, 249);
+    
+    align-items: center;
+    font-family: 'bangers' ;
+    background-color:rgb(0, 0, 0, 0.8);
+}

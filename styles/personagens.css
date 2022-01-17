@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    background-image: url(../imgs/backpersonagens.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.personagens{
+    display: flex;
+    justify-content: space-around;
+}
+
+.personagens p {
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.fundo{
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    width: 20vw;
+}
+
+.personagem-um img, .personagem-dois img, .personagem-tres img{
+    position: relative;
+    left: 0px;
+}
+
+/* descendo imagens */
+.personagem-um img{
+    margin-top: 80px;
+}
+
+.personagem-dois img{
+    margin-top: 68px;
+}
+
+.personagem-tres img{
+    margin-top: 28px;
+}
+
+.linkdaryl {
+    text-decoration: none;
+}
+.linkrick {
+    text-decoration: none;
+}
+.linkellie {
+    text-decoration: none;
+}

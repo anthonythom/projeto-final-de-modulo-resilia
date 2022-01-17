@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Resilia\Desktop\projeto-de-final-de-modulo-main\styles\rickfase1.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="/styles/rickfase1.css" />
+
+    <title>Daryl-fase-1</title>
+</head>
+<body class="bg">
+    <h1 class="gif"><img src="C:\Users\Resilia\Desktop\projeto-de-final-de-modulo-main\imgs\zombie-dead.gif"" width="350px"></h1>
+</div>
+<h2 class="anunciado">Você está perdido em uma floresta rodeada de zumbis e precisa encontrar
+    um abrigo urgentemente para passar a noite. Andando floresta a dentro, você acaba dando de cara
+    com um zumbi. ele sente seu cheiro e logo começa a te perseguir.    ele te encurala e vc só tem duas opções:
+</h2>
+<h3 class="escolha1">Opção 1: Espera por ajuda</h3>
+<h3 class="escolha2">Opção 2: Tenta atacar o zumbi com uma faca </h3>
+
+<button onclick="rick1()">    Escolha  </button>
+
+<script>
+    function rick1() {
+        var chance = 0;
+
+        while (chance < 3) {
+            var text;
+            var escolha = prompt('Qual a sua escolha? \n \n 1 - Espera ajuda de alguém por perto \n \n 2 - Tenta atacar o zumbi para mata-lo!.')
+
+            switch (escolha) {
+                
+                case "1":
+                    escolha0 = alert("Sua ajuda está chegando, aguarde um pouco.")
+                    window.alert('boa escolha, vamos para a proxima fase')
+                            return window.location.href = 'rickfase2.html'
+                    break;
+
+                case "2":
+                    escolha2 = prompt("Um cachorro pula e ataca o zumbi te dando a chance de poder escapar. O que voce vai fazer? \n \n 1) Correr \n 2) Atacar");
+                    switch (escolha2) {
+                        case "1":
+                            window.alert('não foi dessa vez que voce conseguiu, mas não desista, tente novamente!')
+                            return window.location.href = 'index.html'
+                            break;
+
+                        default:
+                            chance++;
+                            text = alert("Voce perdeu. Voce tenta atacar o zumbi e tropeça em um galho no chão, o zumbi te morde e voce acaba então sendo infectado. Suas vidas restantes são: " + (3 - chance));
+                            break;
+                    }
+                    break;
+
+                case "2":
+                    text = alert("Você não tem força o suficiente contra um zumbi! Você perdeu uma vida. Suas vidas restantes são: " + (3 - chance));
+                    break;
+
+                default:
+                    chance++;
+
+            }
+            if (chance > 2) {
+                text = alert("Game Over!")
+            }
+        }
+    }
+</script>
+
+    
+</body>
+</html>

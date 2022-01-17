@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+
+.imagemfundo {
+    border: 3px solid rgb(128, 255, 0);
+    background-image: url();
+background-repeat: no-repeat;
+background-size: auto;
+height: 100vh;
+}
+h1 {border:3px solid rgb(12, 191, 223);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+    background-color: rgb(96, 112, 96);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h2{
+border: 3px solid blueviolet;
+    color: rgb(255, 255, 255);
+    background-color: rgb(98, 114, 98);
+    font-family: 'Josefin Sans', sans-serif;
+}
